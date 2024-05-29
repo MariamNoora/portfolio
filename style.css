@@ -1,0 +1,307 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Josefin Sans", sans-serif;
+}
+body
+{
+    background-color:rgba(36, 120, 111, 0.50) ;
+}
+h1
+{
+    font-family: "Jacquard 12", system-ui; 
+}
+header
+{
+    width: 100%;
+    background-color: teal;
+    color: cadetblue;
+    font-size: 25px;
+    position: sticky;
+    top: 0px;
+}
+nav
+{
+    margin-right: 300px;
+    margin-left: 300px ;
+}
+ul
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul li
+{
+    margin: 10px;
+    list-style: none;
+}
+ul i
+{
+    color: rgb(15, 41, 42);
+    font-size: 30px;
+}
+ul i:hover
+{
+    color: rgb(168, 204, 201);
+}
+a
+{
+    color: rgb(36, 59, 59);
+    text-decoration: none;
+}
+a:hover
+{
+    text-shadow: 2px 2px 3px rgb(45, 74, 74);
+}
+#home
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://st2.depositphotos.com/6892592/9895/v/950/depositphotos_98954130-stock-illustration-crystal-pattern-in-vector-geometric.jpg');
+}
+video
+{
+    height:  600px;
+}
+section h1
+{
+    position: absolute;
+    color: rgb(197, 208, 207);
+    font-size: 80px;
+}
+#face
+{
+    width: 100%;
+    height: 630px;
+}
+#name 
+{
+    position: absolute;
+    text-align: center;
+    top: 120%;
+    left: 35%;
+    background-color: rgba(134, 169, 169, 0.551);
+    margin: 10px;
+    padding: 10px;
+    font-size: 45px;
+    border: 5px groove rgb(25, 174, 180);
+    color: rgb(37, 66, 67);
+    text-decoration: none;
+}
+#name:hover
+{
+    background-color: rgba(134, 169, 169);
+    border: 5px groove rgb(174, 181, 182);
+    text-shadow: 2px 2px 3px rgb(37, 66, 67);
+    color: rgb(74, 134, 136);
+}
+.row
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#about img
+{
+    height:300px;
+    border-radius: 100%;
+    padding: 20px;
+}
+section h2
+{
+    text-align: center;
+    text-decoration: underline double;
+    color: rgb(1, 36, 36);
+}
+
+#about p
+{
+    text-align: justify;
+    font-size: 20px;
+    padding: 30px;
+}
+.row div
+{
+    text-align: center;
+    margin: 50px;
+}
+#iam,#about,#projects,#services
+{
+    margin-bottom: 90px;
+}
+.row1,.row2
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+.col1 img
+{
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    transition: width 1s, height 1s, transform 1s;
+}
+.col1 img:hover
+{
+    border: 4px solid rgb(0, 63, 63);
+    transform: rotate(360deg);
+}
+.row2
+{
+    text-align: justify;
+}
+.col2
+{
+    padding: 20px;
+    margin: 20px;
+    border: 2px groove cadetblue;
+    background: linear-gradient(to top,rgb(0, 63, 63)50% , cadetblue 50%);
+    transition: all 0.5s;
+    background-size: 100% 200%;
+}
+.col2:hover
+{
+    background-position: bottom;
+}
+.col2 img
+{
+    width: 250px;
+    height: 300px;
+    padding-bottom:20px ;
+}
+form
+{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+.inp
+{
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+}
+textarea
+{
+    height: 100px;
+}
+button
+{
+    background-color: rgb(1, 80, 1);
+    color: rgb(154, 187, 104);
+}
+button:hover
+{
+    background-color: rgb(82, 133, 82);
+    color:rgb(1, 80, 1) ;
+}
+#contact
+{
+    background-color: rgb(1, 79, 79);
+}
+
+
+@media screen and (max-width:400px) 
+{
+    header
+    {
+        width: 390px;
+        margin: 0px;
+        padding: 5px;
+        font-size: 16px;
+        font-weight: 900;
+    }
+    nav
+    {
+        margin-left: 0px ;
+    }
+    video
+    {
+        height: 200px;
+    }
+    section 
+    {
+        background-color:rgba(36, 120, 112, 0.275) ;
+    }
+    section h1
+    {
+        font-size: 30px;
+    }
+    #face
+    {
+        height: 200px;
+    }
+    #name
+    {
+        top: 55%;
+        left: 25%;    
+        font-size: 14px;
+    }
+    section h2
+    {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    #iam,#about,#projects,#services
+    {
+        margin-bottom: 20px;
+    }
+    .row
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .row div
+    {
+        margin: 20px;
+    }
+    .row h3
+    {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    #about img
+    {
+        height:150px;
+        border-radius: 100%;
+        padding: 20px;
+        padding-bottom: 0px;
+    }    
+    #about p
+    {
+        font-size: 15px;
+        padding: 0px;
+    }
+    .row1,.row2
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0px;
+    }
+    .col1 img
+    {
+        width: 300px;
+        height: 200px;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+    .col2 img 
+    {
+        padding-left: 33px;    
+    }
+    .inp
+    {
+        width: 300px;
+    }
+    #contact
+    {
+        padding-top: 10px;
+    }
+}
